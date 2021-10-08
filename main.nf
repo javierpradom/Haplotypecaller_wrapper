@@ -14,6 +14,6 @@ process foo {
 
   script:
   """
-  echo $x >> /pasteur/sonic/homes/jpradoma/gdap_zeus/CAAPA_Calling/Haplotypecaller_wrapper/samples.txt
+  echo $x >> $(pwd)/samples.txt
   """
 }
