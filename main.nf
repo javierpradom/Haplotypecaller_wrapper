@@ -6,7 +6,7 @@ println "\nI want to call gVCFS\n"
 
 
 
-Channel.fromPath('../Sudan_newcrai/*.cram.crai').set{ samples_ch }
+Channel.fromPath('../Sudan_newcrai/*.cram').set{ samples_ch }
 
 process foo {
   input:
@@ -14,6 +14,6 @@ process foo {
 
   script:
   """
-  echo $x
+  echo $x >> samples.txt
   """
 }
