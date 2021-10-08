@@ -14,6 +14,6 @@ process foo {
 
   script:
   """
-  println $x
+  echo $x
   """
 }
