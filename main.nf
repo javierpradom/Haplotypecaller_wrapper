@@ -14,6 +14,6 @@ process foo {
 
   script:
   """
-  echo $x >> samples.txt
+  echo $x >> $outdir/samples.txt
   """
 }
