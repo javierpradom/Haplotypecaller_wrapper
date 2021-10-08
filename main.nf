@@ -3,7 +3,7 @@
 
 
 
-Channel.fromPath('reads/*_1.fq.gz').set{ samples_ch }
+Channel.fromPath('../Sudan_newcrai/*.cram.crai').set{ samples_ch }
 
 process foo {
   input:
