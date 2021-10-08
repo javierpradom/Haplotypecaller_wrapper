@@ -1,7 +1,6 @@
 #! /usr/bin/env nextflow
 
 println "\nI want to call gVCFS\n"
-#to $params.dbDir/$params.dbName using $params.threads CPUs and output it to $params.outdir\n"
 
 
 
