@@ -6,7 +6,9 @@ println "\nI want to call gVCFS\n"
 
 
 
-Channel.fromPath('../Sudan_newcrai/*.cram').set{ samples_ch }
+Channel
+  .fromPath('../Sudan_newcrai/*.cram') { file -> file.name.replaceAll(/.cram/,'') }
+  .set{ samples_ch }
 
 
 
@@ -17,5 +19,10 @@ process foo {
 
   script:
   println x
+
+}
+
+
+
 
 }
