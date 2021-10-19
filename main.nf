@@ -19,6 +19,7 @@ process foo {
 
   script:
   y = x.replaceFirst(/.cram/, "")
-  println x,y
+  println x
+  println y
 
 }
