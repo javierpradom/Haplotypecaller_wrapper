@@ -18,7 +18,7 @@ process foo {
   file x from samples_ch
 
   script:
-  y = x.replaceAll(/.cram/, "")
+  y = x.replaceAll(/".cram"/, "")
   println x
   println y
 
