@@ -14,6 +14,8 @@ Channel.fromPath('../Sudan_newcrai/*.cram').set{ samples_ch }
 process foo {
   input:
   file x from samples_ch
+
+
   println x.name
 
 }
