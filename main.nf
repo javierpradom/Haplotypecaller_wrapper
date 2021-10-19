@@ -21,8 +21,3 @@ process foo {
   println x
 
 }
-
-
-
-
-}
