@@ -16,9 +16,6 @@ process foo {
   file x from samples_ch
 
   script:
-  println x.name
-  """
-  echo $x
-  """
+  println x
 
 }
