@@ -15,7 +15,10 @@ process foo {
   input:
   file x from samples_ch
 
-
+  script:
   println x.name
+  """
+  echo $x
+  """
 
 }
