@@ -13,6 +13,16 @@ Channel
 
 println params.outdir
 
+process sayHello {
+
+    """
+    echo 'Hello world!' > test_file
+    """
+
+}
+
+
+
 process foo {
   input:
   set sampleId, file(cram) from samples_ch
