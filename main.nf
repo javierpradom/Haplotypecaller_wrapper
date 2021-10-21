@@ -7,10 +7,10 @@ println "\nI want to call gVCFS\n"
 
 
 Channel
-  .fromPath('../Sudan_newcrai/*.cram')
+  .fromPath('../Sudan_test/*.cram') { file -> file.name.replaceAll(/.bam|.bai$/,'') }
   .set{ samples_ch }
-  .replaceAll(/".cram"/, "")
 
+println samples_ch
 
 
 

@@ -1,0 +1,1 @@
+y = x.replaceAll(/".cram"/, "")
