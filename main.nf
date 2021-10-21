@@ -1,5 +1,7 @@
 #! /usr/bin/env nextflow
 
+nextflow.enable.dsl=2
+
 println "\nI want to call gVCFS\n"
 
 
@@ -16,7 +18,7 @@ process foo {
   set sampleId, file(cram) from samples_ch
 
   script:
-  
+
 
 
 }
