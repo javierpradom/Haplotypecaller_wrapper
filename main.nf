@@ -10,7 +10,7 @@ Channel
   .fromFilePairs('Sudan_newcrai/*.{cram,crai}') { file -> file.name.replaceAll(/.cram|.crai$/,'') }
   .set { samples_ch }
 
-
+samples_ch.subscribe { println "value: $it" }
 
 process foo {
   input:
