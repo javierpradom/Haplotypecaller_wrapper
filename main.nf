@@ -11,7 +11,7 @@ Channel
   .fromFilePairs(params.crams)
   .set { samples_ch }
 
-println params.outdir
+println params.outdir + params.crams
 samples_ch.subscribe { println "value: $it" }
 
 
