@@ -12,14 +12,14 @@ Channel
   .fromFilePairs(params.crams)
   .set { samples_ch }
 
-println params.outdir + params.crams
+println params.outdir + "   "  + params.crams
 samples_ch.subscribe { println "value: $it" }
 
 
 process sayHello {
 
     """
-    echo 'Hello world!' > test_file
+    echo 'Hello world!' > $params.basedir/test_file
     """
 
 }
