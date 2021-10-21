@@ -1,6 +1,5 @@
 #! /usr/bin/env nextflow
 
-nextflow.enable.dsl=2
 
 println "\nI want to call gVCFS\n"
 
