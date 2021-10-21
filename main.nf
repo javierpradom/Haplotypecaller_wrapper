@@ -8,8 +8,9 @@ params.basedir="$PWD"
 params.crams="$params.basedir/Sudan_newcrai/*.{cram,crai}"
 
 
+
 Channel
-  .fromFilePairs(params.crams)
+  .fromFilePairs(params.basedir/Sudan_newcrai/*.{cram,crai}) { file -> file.name.replaceAll(/.bam|bai$/,'') }
   .set { samples_ch }
 
 println params.outdir + "   "  + params.crams
