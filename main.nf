@@ -18,7 +18,7 @@ process foo {
   set sampleId, file(cram) from samples_ch
 
   script:
-
+  println params.threads
 
 
 }
