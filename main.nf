@@ -6,10 +6,10 @@ println "\nI want to call gVCFS\n"
 
 
 Channel
-  .fromPath('Sudan_newcrai/*.cram') { file -> file.name.replaceAll(/.cram$/,'') }
+  .fromFilePairs('Sudan_newcrai/*.{cram,crai}') { file -> file.name.replaceAll(/.cram|.crai$/,'') }
   .set { samples_ch }
+  .view()
 
-samples_ch.subscribe { println "value: $it" }
 
 
 process foo {
