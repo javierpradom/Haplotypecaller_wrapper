@@ -12,6 +12,8 @@ Channel
   .set { samples_ch }
 
 println params.outdir
+samples_ch.subscribe { println "value: $it" }
+
 
 process sayHello {
 
