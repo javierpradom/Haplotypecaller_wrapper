@@ -4,7 +4,7 @@
 process sayHello {
 
     """
-    echo 'Hello world!' > $params.basedir/test_file
+    echo 'Hello world!' > test_file
     """
 
 }
