@@ -20,7 +20,7 @@ process foo {
 
   script:
   """
-  echo $sampleId >> $params.outdir/test_samples.txt
+  echo $sampleId >> test_samples.txt
   """
 
 
