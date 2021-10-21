@@ -18,7 +18,7 @@ process foo {
 
 
   script:
-  println sampleId
+  println sampleId + cram
 
 
 }
