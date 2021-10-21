@@ -15,6 +15,6 @@ process foo {
   set sampleId, file(cram), file(crai) from samples_ch
 
   script:
-  println sampleId  >> params.outdir/test.txt
+  println sampleId  >> "$params.outdir/test.txt"
 
 }
