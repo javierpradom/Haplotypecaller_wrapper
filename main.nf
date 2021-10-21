@@ -8,6 +8,7 @@ Channel
   .fromFilePairs('Sudan_newcrai/*.{cram,crai}') { file -> file.name.replaceAll(/.cram|.crai$/,'') }
   .set { samples_ch }
 
+println params.outdir
 
 
 process foo {
@@ -15,9 +16,7 @@ process foo {
   set sampleId, file(cram) from samples_ch
 
   script:
-  """
-  echo $sampleId
-  """
+  
 
 
 }
