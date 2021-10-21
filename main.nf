@@ -2,13 +2,6 @@
 println "\nI want to call gVCFS\n"
 
 
-process sayHello {
-
-    """
-    echo 'Hello world!' > file
-    """
-
-}
 
 
 
