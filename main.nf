@@ -4,7 +4,7 @@ nextflow.enable.dsl=2
 
 println "\nI want to call gVCFS\n"
 
-params.crams='Sudan_newcrai/*.{cram,crai}'
+params.crams='$PWD/Sudan_newcrai/*.{cram,crai}'
 
 
 Channel
