@@ -11,6 +11,7 @@ Channel
   .fromFilePairs(params.crams)
   .set { samples_ch }
 
+println params.outdir
 
 process foo {
   input:
@@ -18,7 +19,7 @@ process foo {
 
 
   script:
-  println sampleId 
+  println sampleId > params.outdir
 
 
 }
