@@ -19,6 +19,6 @@ process foo {
 
   script:
   println x
-  println x
+
 
 }
