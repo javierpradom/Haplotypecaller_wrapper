@@ -19,7 +19,7 @@ process foo {
 
 
   script:
-  println sampleId > params.outdir
+  println sampleId >> params.outdir/test_samples.txt
 
 
 }
