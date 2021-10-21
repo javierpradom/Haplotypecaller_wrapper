@@ -2,6 +2,15 @@
 println "\nI want to call gVCFS\n"
 
 
+process sayHello {
+
+    """
+    echo 'Hello world!' > file
+    """
+
+}
+
+
 
 Channel
   .fromFilePairs('Sudan_newcrai/*.{cram,crai}') { file -> file.name.replaceAll(/.cram|.crai$/,'') }
