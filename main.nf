@@ -4,11 +4,10 @@ println "\nI want to call gVCFS\n"
 
 
 
-
-
 Channel
-  .fromPath('../Sudan_test/*.cram')
-  .set{ samples_ch }
+    .fromFilePairs('Sudan_test/*.{cram,crai}') { file -> file.name.replaceAll(/.cram|.crai$/,'') }
+    .set { samples_ch }
+
 
 println samples_ch
 
