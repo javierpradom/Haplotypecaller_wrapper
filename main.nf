@@ -14,7 +14,7 @@ samples_ch.subscribe { println "value: $it" }
 
 process foo {
   input:
-  set sampleId, file(cram), file(crai) from samples_ch
+  set sampleId, file(cram) from samples_ch
 
 
   script:
